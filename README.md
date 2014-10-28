@@ -73,6 +73,10 @@ docker pull tinmanpiano/bellows-riddles-app
 docker run --name <container-name> -d -p 80:80 tinmanpiano/bellows-riddles-app 
 ```
 
+One Line version (assuming you are named it `bellows-dev`, and use docker registry)
+```
+sudo docker stop bellows-dev && sudo docker rm bellows-dev && sudo docker pull tinmanpiano/bellows-riddles-app && sudo docker run --name bellows-dev -d -p 80:80 tinmanpiano/bellows-riddles-app
+```
 
 ### Dev version
 You don't want to wait for registry to build you can make you own docker on the VM and run it yourself.

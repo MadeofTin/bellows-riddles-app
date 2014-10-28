@@ -6,16 +6,6 @@
     src: url('http://storage.googleapis.com/bellows/assets/fonts/Royal2.ttf'); /*URL to font*/
 }
 
-@font-face {
-    font-family: 'Riddle-Base'; /*a name to be used later*/
-    src: url('http://storage.googleapis.com/bellows/assets/fonts/Quicksand-Light.otf'); /*URL to font*/
-}
-
-@font-face {
-    font-family: 'Riddle-Emph'; /*a name to be used later*/
-    src: url('http://storage.googleapis.com/bellows/assets/fonts/Pacifico.ttf'); /*URL to font*/
-}
-
 
 /******* container *******/
 .container-fluid{
@@ -71,8 +61,9 @@
 
 .riddlesView .riddleLines .riddleLine {
   text-align: center;
+  font-weight: 300;
   font-size: 1.6em;
-  font-family: 'Riddle-Base';
+  font-family: 'Quicksand';
 }
 
 
