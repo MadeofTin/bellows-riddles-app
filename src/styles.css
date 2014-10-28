@@ -1,3 +1,23 @@
+
+/* custom fonts used hosted on GCStorage */
+
+@font-face {
+    font-family: 'First-Letter'; /*a name to be used later*/
+    src: url('http://storage.googleapis.com/bellows/assets/fonts/Royal2.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Riddle-Base'; /*a name to be used later*/
+    src: url('http://storage.googleapis.com/bellows/assets/fonts/Quicksand-Light.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Riddle-Emph'; /*a name to be used later*/
+    src: url('http://storage.googleapis.com/bellows/assets/fonts/Pacifico.ttf'); /*URL to font*/
+}
+
+
+/******* container *******/
 .container-fluid{
   padding: 0;
 }
@@ -30,6 +50,8 @@
   margin-right: auto;
 }
 
+
+/******* riddles *******/
 .riddlesView {
 }
 
@@ -49,8 +71,8 @@
 
 .riddlesView .riddleLines .riddleLine {
   text-align: center;
-  font-weight: bold;
-  font-size: larger;
+  font-size: 1.6em;
+  font-family: 'Riddle-Base';
 }
 
 
