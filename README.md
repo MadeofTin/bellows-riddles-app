@@ -102,12 +102,14 @@ docker run --rm -p 9001:80 -it tinmanpiano/bellows-riddles-app:dev /bin/bash
 I have a Mac and Boot2Docker is easy to use to do local development.
 Once installed you got to your repo's root folder and run. From the following guide I have reduced it to the parts needed to run our app.
 
-http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide
+* http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide
+Prolly need this to figure it out/
+* https://github.com/boot2docker/boot2docker/blob/master/README.md#container-port-redirection
 
 
 >**Requirements**
 >Homebrew
->Code Devel Tools
+>XCode Devel Tools
 
 ###### Install Docker and Boot2Docker
 
@@ -119,15 +121,57 @@ brew install boot2docker
 ```
 **The Link may not be necessary. I had the Boot2Docker app installed before so I think I needed Homebrew to overwrite the link the Mac App made.**
 
-###### Initializes and start boot2docker
+###### Initialize and start boot2docker
 
-```
+```shell
 boot2docker init
 boot2docker up
 export DOCKER_HOST=tcp://192.168.59.103:2375
 ```
 >Your VM might have a different IP address—use whatever boot2docker up told you to use. You probably want to add that environment variable to your shell config.
 
+###### Get your repo
+
+```shell
+boot2docker ssh
+git clone https://github.com/Tinmen/bellows-riddles-app.git
+cd /home/docker/bellows-riddles-app
+docker build -t bellows-dev-serv .
+docker run --rm -p 80:80 -it bellows-dev-serv
+```
+
+^
+| I can get it to this point but then it doesn't let me see it in the browser...
+I get a blank page, with HTML, just no content. So something is buiding wrong somewhere...
+
+```html
+<html><head>
+  <meta charset="utf-8">
+  <title>Bellow's Riddle Adventure</title>
+  <meta name="description" content="Bellow's Riddle Adventure">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/src/styles.css">
+    
+  <!-- custom fonts -->
+  <link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Pacifico" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="main">
+    </div>
+  </div>
+  <script type="text/javascript" src="build/riddles.js"></script>
+</body></html>
+```
+
+
+###### Other Notes that didn't help...
 Initial setup
 ```shell
 boot2docker up
@@ -141,7 +185,3 @@ open http://$(boot2docker ip 2>/dev/null)/
 I can do it on a terminal from my machine but it just shows a blank page. Not a 404 error. Just a blank page. If I refresh then it gives me
 >Google Chrome's connection attempt to 192.168.59.103 was rejected. The website may be down, or your network may not be properly configured.
 >Error code: ERR_CONNECTION_REFUSED
-
-This is the relevant info I think.
-https://github.com/boot2docker/boot2docker/blob/master/README.md#container-port-redirection
-http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide
