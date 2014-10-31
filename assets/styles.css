@@ -1,0 +1,17 @@
+
+/* custom font*/
+
+@import url("//hello.myfonts.net/count/2c6c1b");
+
+  
+@font-face {font-family: 'RinceauNormal1584';src: url('webfonts/2C6C1B_0_0.eot');src: url('webfonts/2C6C1B_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C6C1B_0_0.woff2') format('woff2'),url('webfonts/2C6C1B_0_0.woff') format('woff'),url('webfonts/2C6C1B_0_0.ttf') format('truetype');}
+
+
+.first-letter {
+  font-family: "RinceauNormal1584";
+}
+
+.emph {
+  font-family: "Pacifico";
+}
+
