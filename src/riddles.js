@@ -144,7 +144,7 @@ var RiddlesScreen = React.createClass({
       return <Screen></Screen>;
     }
     var lines = riddle.riddle.map(function(line, index) {
-      return <div key={"riddle-line-"+index} className="riddleLine">{line}</div>;
+      return <div key={"riddle-line-"+index} className="riddleLine" dangerouslySetInnerHTML={{__html:line}}></div>;
     });
     var answers = [];
     $.each(this.props.riddles, function(key, riddle) {
