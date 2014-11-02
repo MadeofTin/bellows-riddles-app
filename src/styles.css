@@ -11,6 +11,9 @@
   background-size: 350px;
 }
 
+.main {
+  background-color:white;
+}
 .btn:focus, .btn:active, .btn:active:focus,
 *:focus,*:active,*:active:focus {
     outline: 0;
