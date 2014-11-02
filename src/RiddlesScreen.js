@@ -10,12 +10,15 @@ var RiddlesScreen = React.createClass({
   getDefaultProps: function() {
     return {
       riddles: {},
+      levels: [],
       onNoLivesLeft: function() {}
     }
   },
 
   getInitialState: function() {
     return {
+      currentLevel: 0,
+      currentRiddleIndex: 0,
       showRiddle: "r1",
       completedRiddles: {},
       livesLeft: 3,
@@ -23,16 +26,31 @@ var RiddlesScreen = React.createClass({
     }
   },
 
+  getCurrentLevel: function() {
+    var level = this.props.levels[this.state.currentLevel];
+    return level;
+  },
+
+  getCurrentRiddle: function() {
+    var level = this.getCurrentLevel();
+    if (!level) {
+      return null;
+    }
+    currentRiddle = this.props.riddles[level.riddles[this.state.currentRiddleIndex]]
+    return currentRiddle;
+  },
+
   handleCorrectAnswer: function(riddle) {
     var completedRiddles = this.state.completedRiddles;
     completedRiddles[riddle.id] = riddle;
     this.setState({completedRiddles:completedRiddles});
-    for (var key in this.props.riddles) {
-      if (this.state.completedRiddles[key]) {
-        continue;
-      }
-      this.setState({showRiddle: key});
-      break;
+    if (this.state.currentRiddleIndex < this.getCurrentLevel().riddles.length - 1) {
+      this.setState({currentRiddleIndex:this.state.currentRiddleIndex+1});
+    } else {
+      this.setState({
+        currentLevel: this.state.currentLevel + 1,
+        currentRiddleIndex: 0
+      });
     }
   },
 
@@ -44,7 +62,7 @@ var RiddlesScreen = React.createClass({
   },
 
   render: function() {
-    var riddle = this.props.riddles[this.state.showRiddle];
+    var riddle = this.getCurrentRiddle();
     if (!riddle) {
       return <Screen></Screen>;
     }
@@ -52,9 +70,9 @@ var RiddlesScreen = React.createClass({
       return <div key={"riddle-line-"+index} className="riddleLine" dangerouslySetInnerHTML={{__html:line}}></div>;
     });
     var answers = [];
-    $.each(this.props.riddles, function(key, riddle) {
-      if (!this.state.completedRiddles[key]) {
-        answers.push(riddle.answer);
+    this.getCurrentLevel().riddles.forEach(function(riddleKey) {
+      if (!this.state.completedRiddles[riddleKey]) {
+        answers.push(this.props.riddles[riddleKey].answer);
       }
     }.bind(this));
     answers = shuffle(answers);
@@ -62,6 +80,9 @@ var RiddlesScreen = React.createClass({
       <Screen>
         <div className="riddlesView">
           <div className="riddleStats clearfix">
+            <div className="riddleStat">
+              Level: <strong>{this.state.currentLevel + 1}</strong>
+            </div>
             <div className="riddleStat">
               Riddles: <strong>{answers.length}</strong>
             </div>
