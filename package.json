@@ -4,11 +4,12 @@
   "description": "Get started with building React apps",
   "repository": "Tinmen/bellows-riddles-base",
   "dependencies": {
-    "node-static": "~0.7.6",
-    "react": "~0.8.0",
-    "jquery": "~2.1.1",
     "bootstrap": "~3.2.0",
-    "parse": "petehunt/parsesdk-isomorphic"
+    "jquery": "~2.1.1",
+    "knuth-shuffle": "^1.0.1",
+    "node-static": "~0.7.6",
+    "parse": "petehunt/parsesdk-isomorphic",
+    "react": "~0.8.0"
   },
   "devDependencies": {
     "css-loader": "^0.9.0",
