@@ -5,14 +5,15 @@
 .container-fluid{
   width: 350px;
   height: 715px;
-  padding: 86px 24px 100px 23px;
-  background: url(http://storage.googleapis.com/bellows/assets/imgs/iphone6.png);
+  padding: 105px 24px 100px 23px;
+  background: url(http://storage.googleapis.com/bellows/assets/imgs/iphone6-hd.png);
   background-repeat: no-repeat;
   background-size: 350px;
 }
 
-.main {
-  background-color:white;
+.screen {
+  height: 521px;
+  position: relative;
 }
 .btn:focus, .btn:active, .btn:active:focus,
 *:focus,*:active,*:active:focus {
@@ -59,6 +60,8 @@
 
 .riddlesView .riddleLines {
   padding: 15px;
+  background-color: rgba(255,255,255,0.8);
+  margin: 15px;
 }
 
 .riddlesView .riddleLines .riddleLine {
