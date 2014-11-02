@@ -80,17 +80,14 @@ var RiddlesScreen = React.createClass({
       <Screen>
         <div className="riddlesView">
           <div className="riddleStats clearfix">
-            <div className="riddleStat">
+            <div className="level">
               Level: <strong>{this.state.currentLevel + 1}</strong>
             </div>
-            <div className="riddleStat">
+            <div className="riddles">
               Riddles: <strong>{answers.length}</strong>
             </div>
-            <div className="riddleStat">
+            <div className="lives">
               Lives: <strong>{this.state.livesLeft}</strong>
-            </div>
-            <div className="riddleStat">
-              Hints: <strong>{this.state.hintsLeft}</strong>
             </div>
           </div>
           <AnswersList

@@ -3,20 +3,25 @@
 
 /******* container *******/
 .container-fluid{
-  padding: 0;
+  width: 350px;
+  height: 715px;
+  padding: 105px 24px 100px 23px;
+  background: url(http://storage.googleapis.com/bellows/assets/imgs/iphone6-hd.png);
+  background-repeat: no-repeat;
+  background-size: 350px;
+  font-family: "Quicksand"
+
 }
 
+.screen {
+  height: 521px;
+  position: relative;
+}
 .btn:focus, .btn:active, .btn:active:focus,
 *:focus,*:active,*:active:focus {
     outline: 0;
 }
 
-.navBar {
-  color: white;
-  background: #428BCA;
-  line-height: 30px;
-  padding: 0 10px;
-}
 
 .introScreen {
   background: #FEF2DA;
@@ -40,35 +45,68 @@
 }
 
 .riddlesView .riddleStats {
-  border-bottom: 1px solid #428BCA;
-  line-height: 30px;
+  line-height: 19px;
   padding: 0 10px;
+  background: url(http://storage.googleapis.com/bellows/assets/imgs/top-ribbon.png);
+  background-size: 292px;
+  background-repeat: no-repeat;
+  margin: 0px 5px;
+  color: #516688;
 }
 .riddlesView .riddleStats .riddleStat {
   float: right;
   margin: 0 15px;
+  
+}
+
+.lives {
+  position: relative;
+  top: -28px;
+  left: 58px;
+}
+
+.riddles {
+  position: relative;
+  top:  -10px;
+  left: 150px;
+  
+}
+
+.level {
+  position: relative;
+  left: 106px;
+  top: 41px;
 }
 
 .riddlesView .riddleLines {
   padding: 15px;
+  background-color: rgba(255,255,255,0.8);
+  max-height: 330px;
+  margin: 15px;
+  color: #516688;
 }
 
 .riddlesView .riddleLines .riddleLine {
   text-align: center;
   font-weight: 300;
-  font-size: 1.6em;
-  font-family: 'Quicksand';
+  font-size: 1.15em;
 }
 
-
+.riddlesView .answersPane {
+  margin-top:7px;
+}
 .riddlesView .answersPane .answersList {
   text-align: center;
   overflow: scroll;
-  max-height: 130px;
-  border-bottom: 1px solid #428BCA;
-  border-left: 5px solid #428BCA;
+  max-height: 80px;
+  /* border-bottom: 1px solid #428BCA; */
+  /* border-left: 5px solid #428BCA; */
   box-shadow: inset 0px 2px 2px rgba(0,0,0,.1);
-  background: #eee;
+  background: url(http://storage.googleapis.com/bellows/assets/imgs/green-patch.png);
+  width: 90%;
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto;  
 }
 
 .riddlesView .answersPane .answersFilter {
@@ -78,20 +116,20 @@
 }
 
 .riddlesView .answersPane .answersFilter input {
-  border: 1px solid #428BCA;
+  border: 1px solid #698953;
   margin: 5px;
 }
 
 .riddlesView .answersPane .answersList .btn.riddleAnswer {
-  border: 1px solid #428BCA;
+  border: 1px solid #698953;
   background-color: white;
   padding: 5px;
-  margin: 5px;
+  margin: 2px;
   line-height: 1;
-  color: #428BCA;
+  color: #698953;
 }
 
 .riddlesView .answersPane .answersList .btn.riddleAnswer:active {
-  background-color: #428BCA;
+  background-color: #698953;
   color: white;
 }
