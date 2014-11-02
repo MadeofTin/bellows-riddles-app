@@ -3,6 +3,7 @@
 
 /******* container *******/
 .container-fluid{
+  max-width: 300px;
   padding: 0;
 }
 
