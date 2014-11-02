@@ -3,18 +3,20 @@
 
 @import url("//hello.myfonts.net/count/2c6c1b");
 
-@font-face {font-family: 'RinceauNormal1584';src: url('webfonts/2C6C1B_0_0.eot');src: url('webfonts/2C6C1B_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/2C6C1B_0_0.woff2') format('woff2'),url('webfonts/2C6C1B_0_0.woff') format('woff'),url('webfonts/2C6C1B_0_0.ttf') format('truetype');}
+@font-face {font-family: 'Royal';src: url('http://storage.googleapis.com/bellows/assets/fonts/Royal2.ttf');
+}
 
 
 .first-letter {
-  font-family: "RinceauNormal1584";
+  font-family: "Royal";
+  font-size: 2.5em;
+  color:#698953;
 }
 
 .emph {
   font-family: "Pacifico";
+  font-size: 1.5em;
+  color:#698953;
 }
 
 
-.iphone-wrapper {
-  background: url(http://storage.googleapis.com/bellows/assets/imgs/iphone6.png);
-}
