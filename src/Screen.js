@@ -8,7 +8,7 @@ var Screen = React.createClass({
   render: function() {
     return (
       <div className="screen">
-        <NavBar />
+        
         {this.props.children}
       </div>
       );

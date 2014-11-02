@@ -52,6 +52,10 @@
   border-bottom: 1px solid #428BCA;
   line-height: 30px;
   padding: 0 10px;
+  background: url(http://storage.googleapis.com/bellows/assets/imgs/top-ribbon.png);
+  background-size: 292px;
+  background-repeat: no-repeat;
+  margin: 0px 5px;
 }
 .riddlesView .riddleStats .riddleStat {
   float: right;
@@ -75,7 +79,7 @@
 .riddlesView .answersPane .answersList {
   text-align: center;
   overflow: scroll;
-  max-height: 130px;
+  max-height: 150px;
   border-bottom: 1px solid #428BCA;
   border-left: 5px solid #428BCA;
   box-shadow: inset 0px 2px 2px rgba(0,0,0,.1);
