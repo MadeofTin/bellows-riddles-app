@@ -11,16 +11,15 @@
     "parse": "petehunt/parsesdk-isomorphic"
   },
   "devDependencies": {
-    "jsx-loader": "~0.0.0",
-    "webpack": "~0.11.0",
-    "url-loader": "~0.5.1",
-    "css-loader": "~0.6.2",
-    "style-loader": "~0.6.0"
+    "css-loader": "^0.9.0",
+    "jsx-loader": "^0.11.2",
+    "style-loader": "^0.8.1",
+    "url-loader": "^0.5.5",
+    "webpack": "^1.4.9"
   },
   "scripts": {
-    "prestart": "webpack src/riddles.js build/riddles.js",
-    "start": "node serve.js"
+    "start": "webpack --colors --display-error-details --watch --debug src/riddles.js build/riddles.js"
   },
-  "author": "Pete Hunt",
+  "author": "Paul Carduner",
   "license": "Apache 2"
 }
