@@ -19,7 +19,9 @@
     "webpack": "^1.4.9"
   },
   "scripts": {
-    "start": "webpack --colors --display-error-details --watch --debug src/riddles.js build/riddles.js"
+    "prestart": "webpack src/riddles.js build/riddles.js",
+    "start": "node serve.js",
+    "webpack": "webpack --colors --watch --display-error-details --debug src/riddles.js build/riddles.js"
   },
   "author": "Paul Carduner",
   "license": "Apache 2"
