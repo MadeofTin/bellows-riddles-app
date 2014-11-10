@@ -8,55 +8,55 @@
 	"r2": {
 		"id": "r2",
   	"answer" : "Courage",
-  	"riddle" : ["It's something you find","By losing something else","But when you use it","You don't lose it"],
+  	"riddle" : ["<span class='first-letter'>I</span>t's something you <span class='emph'>find</span>","By <span class='emph'>losing</span> something else","But when you <span class='emph'>use it</span>","You don't <span class='emph'>lose it</span>"],
     "hint" : ""
   },
   "r3": {
 		"id": "r3",
   	"answer" : "Enemies",
-  	"riddle" : ["The less of these you have the better","But the more you do the more they find you","Not written in stone letter","With effort they change anew"],
+  	"riddle" : ["<span class='first-letter'>T</span>he <span class='emph'>less</span> of these you have the better","But the <span class='emph'>more</span> you do the more they find you","Not <span class='emph'>written</span> in stone letter","With effort they <span class='emph'>change anew</span>"],
     "hint" : ""
     },
   "r4" : {
 		"id": "r4",
   	"answer" : "Diet",
-  	"riddle" : ["The further you go the more you limit","Some do for show some need the benefit","No matter how much you want it's hard to stay with it"],
+  	"riddle" : ["<span class='first-letter'>T</span>he <span class='emph'>further </span> you go the more you limit","Some do for <span class='emph'>show </span> some need the <span class='emph'>benefit</span>","No matter how much you <span class='emph'>want</span> it's hard to stay with it"],
   	"hint": ""
   	},
   "r5" : {
 		"id": "r5",
   	"answer" : "Airport",
-  	"riddle" : ["A place you can come by yourself But rarely sit alone","A Cast system of class Everyone condones","No matter how much you hurry It won't get you home","Faster than planned we won't judge as you stand like a clone"],
+  	"riddle" : ["<span class='first-letter'>A</span> place you can come by <span class='emph'>yourself</span> but rarely sit alone","A Caste system of class <span class='emph'>everyone</span> condones","No matter how much you <span class='emph'>hurry</span> It won't get you home","Faster than planned <span class='emph'>we won't judge</span> as you stand like a clone"],
   	"hint": ""
   	},
   "r6" : {
 		"id": "r6",
   	"answer" : "Music",
-  	"riddle" : ["Something most people appreciate but don't know it's value.","Something most people want to create but few know how to","Something you consume without getting full","Something you that can change how you feel and touches the soul"],
+  	"riddle" : ["<span class='first-letter'>S</span>omething most people <span class='emph'>appreciate</span> but don't know it's value.","Something most people <span class='emph'>want</span> to create but few know how to","Something you <span class='emph'>consume</span> without getting full","Something you that can <span class='emph'>change</span> how you feel and touches the soul"],
   	"hint": ""
 	},
 	"r7" : {
 		"id" : "r7",
 		"answer" : "Vaccination",
-		"riddle" : ["A chicken and egg problem at its worst", "You can't get this with out having it first", "For many it's required", "But what it takes to acquire", "Is uncomfortable for most people, it hurts." ],
+		"riddle" : ["<span class='first-letter'>A</span> chicken and egg problem at its worst", "You can't get this with out having it first", "For many it's <span class='emph'>required</span>", "But what it takes to <span class='emph'>acquire</span>", "Is uncomfortable for most people, <span class='emph'>it hurts</span>." ],
 		"hint" : ""
 	},
 	"r8" :{
 		"id" : "r8",
 		"answer" : "Vision",
-		"riddle" : ["In retrospect it's good to have", "But to start off with this some will call you mad ", "It can often make you feel alone", "But the reward for the risk in history is shown"],
+		"riddle" : ["<span class='first-letter'>I</span>n <span class='emph'>retrospect</span> it's good to have", "But to start off with this some will call you <span class='emph'>mad</span> ", "It can often make you feel <span class='emph'>alone</span>", "But the <span class='emph'>reward</span> for the <span class='emph'>risk</span> in history is shown"],
 		"hint" : ""
 	},
 	"r9" :{
 		"id" : "r9",
 		"answer" : "Knowledge",
-		"riddle" : ["There is no limit to how much you can gather", "But the more you get the limits rather ", "Become more clear and in time You see", "That an insatiable appetite this will be"],
+		"riddle" : ["<span class='first-letter'>T</span>here is no <span class='emph'>limit</span> to how much you can gather", "But the more you get the limits rather ", "Become more <span class='emph'>clear</span> and in time You see", "That an <span class='emph'>insatiable appetite</span> this will be"],
 		"hint" : ""
 	},
 	"r10" :{
 		"id" : "r10",
 		"answer" : "Race",
-		"riddle" : ["Everyone tries to value your own", "But everyone tries to accept others it's known","The more diverse it becomes the more it disappears","If we all didn't care why should we hold it dear"],
+		"riddle" : ["<span class='first-letter'>E</span>veryone <span class='emph'>tries</span> to value your own", "But everyone tries to <span class='emph'>accept</span> others it's known","The more <span class='emph'>diverse</span> it becomes the more it disappears","If we all didn't care why should we <span class='emph'>hold it dear</span>?"],
 		"hint" : ""
 	},
 	"r11" :{
@@ -122,7 +122,7 @@
 	"r21" :{
 		"id" : "r21",
 		"answer" : "Ghost",
-		"riddle" : ["Wether or not you believe if I exist", "To see me would cause internal distress", "Some say I am here because of things left undone", "Others to help those who have yet to become"],
+		"riddle" : ["Whether or not you believe if I exist", "To see me would cause internal distress", "Some say I am here because of things left undone", "Others to help those who have yet to become"],
 		"hint" : ""
 	},
 	"r22" :{
@@ -152,7 +152,7 @@
 	"r26" :{
 		"id" : "r26",
 		"answer" : "Train",
-		"riddle" : ["Once you enter you'll exit somehwere else", "You have no control over me you only have what you're delt", "I must stay my course, there is no other way", "Unless you want to die on this day"],
+		"riddle" : ["Once you enter you'll exit somewhere else", "You have no control over me you only have what you're dealt", "I must stay my course, there is no other way", "Unless you want to die on this day"],
 		"hint" : ""
 	},
 	"r27" :{
@@ -164,37 +164,37 @@
 	"r28" :{
 		"id" : "r28",
 		"answer" : "Escalator",
-		"riddle" : ["Even when broken I'm usefull you'll see", "Just by another name you'd know me", "Once you're in line I'll move you with care", "Your load and more I can easily bear"],
+		"riddle" : ["Even when broken I'm useful you'll see", "Just by another name you'd know me", "Once you're in line I'll move you with care", "Your load and more I can easily bear"],
 		"hint" : ""
 	},
 	"r29" :{
 		"id" : "r29",
 		"answer" : "Gate",
-		"riddle" : ["Sometimes I'm at the begninning", "Sometimes I'm at the end", "To get through me you'll need to be a friend", "because my purpose is to control", "Around me it's realatively impossible to go"],
+		"riddle" : ["Sometimes I'm at the beginning", "Sometimes I'm at the end", "To get through me you'll need to be a friend", "because my purpose is to control", "Around me it's relatively impossible to go"],
 		"hint" : ""
 	},
 	"r30" :{
 		"id" : "r30",
 		"answer" : "Window",
-		"riddle" : ["Wether I'm open or closed you can still see", "Though my purpose is to seperate", " you'll agree", "When you have me", "the more connected to the outside you'll be"],
+		"riddle" : ["Whether I'm open or closed you can still see", "Though my purpose is to separate", " you'll agree", "When you have me", "the more connected to the outside you'll be"],
 		"hint" : ""
 	},
 	"r31" :{
 		"id" : "r31",
 		"answer" : "Advertisement",
-		"riddle" : [""],
+		"riddle" : ["Whether I'm open or closed you can still see"],
 		"hint" : ""
 	},
 	"r32" :{
 		"id" : "r32",
 		"answer" : "Movie",
-		"riddle" : [""],
+		"riddle" : ["Whether I'm open or closed you can still see"],
 		"hint" : ""
 	},
 	"r33" :{
 		"id" : "r33",
 		"answer" : "seat",
-		"riddle" : [""],
+		"riddle" : ["Whether I'm open or closed you can still see"],
 		"hint" : ""
 	},
 	"r34" :{

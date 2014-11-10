@@ -21,7 +21,7 @@ var RiddlesScreen = React.createClass({
       currentRiddleIndex: 0,
       showRiddle: "r1",
       completedRiddles: {},
-      livesLeft: 3,
+      livesLeft: 4,
       hintsLeft: 4,
     }
   },

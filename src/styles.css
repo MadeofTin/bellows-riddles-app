@@ -79,17 +79,20 @@
 }
 
 .riddlesView .riddleLines {
-  padding: 15px;
+  padding: 30px 15px 15px 15px;
   background-color: rgba(255,255,255,0.8);
-  max-height: 330px;
+  max-height: 355px;
   margin: 15px;
   color: #516688;
+  overflow-y: scroll;
 }
 
 .riddlesView .riddleLines .riddleLine {
   text-align: center;
   font-weight: 300;
   font-size: 1.15em;
+  margin-bottom: 15px;
+  line-height: 25px;
 }
 
 .riddlesView .answersPane {
